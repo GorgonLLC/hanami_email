@@ -10,13 +10,13 @@ HanamiEmail.configure do |x|
   x.api_key = "sk_ZX_igr4rZWD8sveAPLNJZ3jRWsuuu"
 end
 
-x = HanamiEmail::Alias.create({from: "foo", to: "bar@gmail.com"})
+x = HanamiEmail::Alias.create(from: "foo", to: "bar@gmail.com")
 # => {"id"=>12345, "from"=>"foo", "to"=>"bar@gmail.com", "status"=>"activated"}
 
 x = HanamiEmail::Alias.list
 # => {"data"=>[{"from"=>"foo", "to"=>"bar@gmail.com"}]}
 
-x = HanamiEmail::Alias.delete({from: "foo", to: "bar@gmail.com"})
+x = HanamiEmail::Alias.delete(from: "foo", to: "bar@gmail.com")
 # => {"data"=>{"success"=>true}}
 ```
 

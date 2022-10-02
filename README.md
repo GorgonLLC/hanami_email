@@ -24,5 +24,5 @@ x = HanamiEmail::Alias.delete({from: "foo", to: "bar@gmail.com"})
 
 The gem is available as open source under the terms of the [MIT License][].
 
-[Hanami email forwarding service]: https://hanami.run/faq
+[Hanami email forwarding service]: https://hanami.run
 [MIT License]: https://opensource.org/licenses/MIT
